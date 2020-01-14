@@ -1,0 +1,25 @@
+{
+  "name": "inventory-orders-api",
+  "version": "1.0.0",
+  "description": "Node,js API for inventory and Orders by Jaskaran Singh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "rest",
+    "api"
+  ],
+  "author": "Jaskaran Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "mongoose": "^5.8.7",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  }
+}
