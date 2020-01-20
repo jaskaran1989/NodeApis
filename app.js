@@ -8,7 +8,7 @@ const inventoryroutes = require('./routes/inventory');
 const orderroutes = require('./routes/orders');
 
 mongoose.connect(
-    "mongodb+srv://testuser:treezchallenge@inventory-order-cvdpt.mongodb.net/test?retryWrites=true&w=majority",
+    "mongodb+srv://testuser:<passwordgoeshere>@inventory-order-cvdpt.mongodb.net/test?retryWrites=true&w=majority",
     { useNewUrlParser: true }
     );
   
