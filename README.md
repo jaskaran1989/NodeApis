@@ -14,8 +14,14 @@
 1. Navigate to directory with package.json file 
 2. Type npm install to install required packages
 3. Run npm start
-4. To run MongoDB with this project you have to create own MondodB databse online, I use MongoDB altlas it gives you online sandbox to run your operations.Use [https://www.mongodb.com/cloud/atlas] I launch a free cluster an then worked on that.
+4. To run MongoDB with this project you have to create own MondodB databse online, I use MongoDB altlas it gives you online sandbox to run your operations.Use [https://www.mongodb.com/cloud/atlas] I launch a free cluster an then worked on that and add following to app.js
 
+```
+mongoose.connect(
+    "mongodb+srv://testuser:<passwordgoeshere>@inventory-order-cvdpt.mongodb.net/test?retryWrites=true&w=majority",
+    { useNewUrlParser: true }
+    );
+```
 
 ## Project Structure
 
@@ -64,7 +70,6 @@ const orderSchema = mongoose.Schema({
 module.exports = mongoose.model('Order', orderSchema);
 
 ```
-
 
 
 ## Request endpoints 
